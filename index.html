@@ -10,7 +10,9 @@
   <script type="text/javascript" src="js/pageScraper.jquery.js"></script>
 
   <script>
-    $('a').pageScraper()
+    $(document).ready(function() {
+      $('a').pageScraper('#link_display')
+    })
   </script>
 
   <a href="example.com/1/">First Link</a>
